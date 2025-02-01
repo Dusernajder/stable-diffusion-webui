@@ -1,6 +1,9 @@
 from modules import launch_utils
 
 args = launch_utils.args
+args.skip_torch_cuda_test = True
+
+
 python = launch_utils.python
 git = launch_utils.git
 index_url = launch_utils.index_url
