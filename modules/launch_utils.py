@@ -452,8 +452,6 @@ def configure_for_tests():
     if "--ckpt" not in sys.argv:
         sys.argv.append("--ckpt")
         sys.argv.append(os.path.join(script_path, "test/test_files/empty.pt"))
-    if "--skip-torch-cuda-test" not in sys.argv:
-        sys.argv.append("--skip-torch-cuda-test")
     if "--disable-nan-check" not in sys.argv:
         sys.argv.append("--disable-nan-check")
 
